@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexoPC - Carrito de la compra</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="navegacion">
+      <div class="menu-izquierdo">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../imagenes/Home.png" alt="Inicio">
+          </a>
+        </div>
+        <ul class="lista-menu">
+          <li><a href="./catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
+          <li><a href="./catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
+          <li><a href="./catalogo_portatiles/indexcatalogo.html">Tablets</a></li>
+          <li><a href="./catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
+        </ul>
+      </div>
+      <div class="menu-derecho">
+        <input type="text" placeholder="Buscar producto" class="buscador">
+        <button class="boton-claro">Iniciar sesión</button>
+        <button class="boton-oscuro">Crea cuenta</button>
+        <div class="carrito"><img src="../imagenes/carrito.png" alt="Carrito"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="catalogo" style="min-height: 70vh;">
+    <h1 class="titulo-catalogo">Carrito de la compra</h1>
+
+    <div class="contenedor-catalogo" style="align-items: flex-start;">
+
+      <!-- Lista de productos -->
+      <section class="productos" style="flex: 2;">
+        <div class="producto">
+          <img src="./imagenes/ordenadorpng.png" alt="MSI MPG Trident 3">
+          <div class="detalles">
+            <h3>MSI MPG Trident 3</h3>
+            <p>Intel i7 10700F · RTX 2060 SUPER · 16GB RAM · 512GB SSD + 2TB HDD · Windows 10 Home</p>
+            <p class="sku">SKU: D0554A</p>
+            <div class="precio">
+              <span class="precio-antiguo">€3,499.00</span>
+              <span>€3,299.00</span>
+            </div>
+            <input type="number" value="1" min="1" class="cantidad">
+          </div>
+          <button class="boton-oscuro">Eliminar</button>
+        </div>
+
+        <div class="producto">
+          <img src="./imagenes/MSI_PS_desktop.jpg" alt="MSI Creator 15">
+          <div class="detalles">
+            <h3>MSI Creator 15</h3>
+            <p>Intel i7 11800H · RTX 3060 · 16GB RAM · 1TB SSD · Windows 11 Pro</p>
+            <p class="sku">SKU: A021B</p>
+            <div class="precio">
+              <span class="precio-antiguo">€2,299.00</span>
+              <span>€1,999.00</span>
+            </div>
+            <input type="number" value="1" min="1" class="cantidad">
+          </div>
+          <button class="boton-oscuro">Eliminar</button>
+        </div>
+
+        <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+          <button class="boton-oscuro">Seguir comprando</button>
+          <button class="boton-oscuro">Vaciar carrito</button>
+          <button class="boton-azul">Actualizar carrito</button>
+        </div>
+      </section>
+
+      <!-- Resumen de compra -->
+      <aside class="filtros" style="flex: 1; background-color: #f2f2f2;">
+        <h2>Resumen de la compra</h2>
+        <p>Subtotal: <strong>€5,298.00</strong></p>
+        <p>IVA (21%): <strong>€1,112.58</strong></p>
+        <hr>
+        <p><strong>Total: €6,410.58</strong></p>
+
+        <button class="boton-azul" style="width: 100%; margin-top: 1rem;">Pagar</button>
+        <button class="boton-claro" style="width: 100%; margin-top: 0.5rem;">Check out con PayPal</button>
+      </aside>
+
+    </div>
+
+    <!-- Información adicional -->
+    <section class="bloque-blanco" style="margin-top: 3rem; border-radius: 15px;">
+      <div class="contenido-bloque">
+        <div class="texto-bloque">
+          <h3>Soporte de producto</h3>
+          <p>Hasta 3 años de garantía con asistencia técnica incluida para tu tranquilidad.</p>
+        </div>
+        <div class="texto-bloque">
+          <h3>Cuenta personal</h3>
+          <p>Con grandes descuentos, envío gratuito y soporte especializado para nuestros clientes.</p>
+        </div>
+        <div class="texto-bloque">
+          <h3>Grandes descuentos</h3>
+          <p>Hasta un 70% de descuento en productos seleccionados de alta calidad.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="seccion-pie">
+      <div class="suscripcion">
+        <h3>Suscríbete a nosotros</h3>
+        <p>Recibe las últimas ofertas y novedades.</p>
+        <form class="formulario-suscripcion">
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button>Suscribirme</button>
+        </form>
+      </div>
+
+      <div class="informacion">
+        <div>
+          <h4>Información</h4>
+          <ul>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Dirección</h4>
+          <p>Calle Capitulares 12, Córdoba, España</p>
+          <p>Tel: +34 957 123 456</p>
+          <p>Lunes a Viernes: 9:00 - 18:00</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

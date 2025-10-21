@@ -1,0 +1,667 @@
+/* ========== RESET Y BASE ========== */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* ========== ENCABEZADO ========== */
+.encabezado {
+  background-color: #1c1c1c;
+  padding: 1rem 2rem;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-izquierdo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.lista-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-menu a {
+  text-decoration: none;
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.lista-menu a:hover {
+  color: #fff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 2px;
+}
+
+.menu-derecho {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buscador {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.buscador:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.boton-claro,
+.boton-oscuro {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.boton-claro {
+  background-color: #fff;
+  color: #000;
+}
+
+.boton-claro:hover {
+  background-color: #e0e0e0;
+}
+
+.boton-oscuro {
+  background-color: #333;
+  color: #fff;
+}
+
+.boton-oscuro:hover {
+  background-color: #444;
+}
+
+.carrito {
+  font-size: 1.4rem;
+}
+
+/* ========== SECCIONES GENERALES ========== */
+.presentacion {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.presentacion img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: #bbb;
+}
+
+/* ========== BLOQUES ========== */
+.bloque-negro,
+.bloque-blanco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+.bloque-negro {
+  background-color: #161414;
+}
+
+.bloque-blanco {
+  background-color: #fff;
+  color: #111;
+}
+
+.contenido-bloque {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  gap: 2rem;
+}
+
+.texto-bloque {
+  flex: 1;
+}
+
+.texto-bloque h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.texto-bloque p {
+  line-height: 1.6;
+}
+
+.imagen-bloque {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-bloque img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-bloque img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ========== CATÁLOGO ========== */
+.catalogo {
+  background-color: #fff;
+  color: #111;
+  padding: 2rem;
+}
+
+.titulo-catalogo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contenedor-catalogo {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.filtros {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.filtros h2 {
+  margin-bottom: 1rem;
+}
+
+.bloque-filtro h3 {
+  margin-bottom: 0.5rem;
+}
+
+.bloque-filtro ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.bloque-filtro a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.3rem 0;
+}
+
+.bloque-filtro a:hover {
+  color: #007bff;
+}
+
+.productos {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.producto {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #fafafa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+  width: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.producto img:hover {
+  transform: scale(1.05);
+}
+
+.detalles {
+  flex: 1;
+}
+
+.precio {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.precio-antiguo {
+  text-decoration: line-through;
+  color: #777;
+  margin-right: 0.5rem;
+}
+
+/* ========== BOTONES ========== */
+.boton-azul {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.boton-azul:hover {
+  background-color: #005fcc;
+  transform: scale(1.05);
+}
+
+/* ========== DETALLE DE PRODUCTO ========== */
+.detalle-producto {
+  background-color: #f3f3f3;
+  color: #111;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ruta {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.ruta a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.ruta a:hover {
+  text-decoration: underline;
+}
+
+.contenido-producto {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.imagen-producto {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 15px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.imagen-producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-producto img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.imagen-producto img:hover {
+  transform: scale(1.05);
+}
+
+.info-producto {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-producto h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.descripcion {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.sku {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.precio-producto {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.precio-actual {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.acciones-compra {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cantidad {
+  width: 70px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #fff;
+}
+
+.mas-informacion {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.mas-informacion h3 {
+  margin-bottom: 0.8rem;
+  color: #000;
+}
+
+.mas-informacion ul {
+  list-style: none;
+  padding: 0;
+  color: #333;
+}
+
+.mas-informacion li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.mas-informacion li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* ========== PIE DE PÁGINA ========== */
+.pie {
+  margin-top: auto;
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 3rem 2rem;
+}
+
+.seccion-pie {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.suscripcion {
+  text-align: center;
+}
+
+.formulario-suscripcion {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.formulario-suscripcion input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.formulario-suscripcion button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formulario-suscripcion button:hover {
+  background-color: #005fcc;
+}
+
+.informacion {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.informacion h4 {
+  margin-bottom: 0.5rem;
+}
+
+.informacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.informacion a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.informacion a:hover {
+  color: #fff;
+}
+
+
+.productos a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.productos a:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Página de iniciar sesión */
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background-color: #111;
+}
+
+.formulario-login {
+  background-color: #1c1c1c;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.formulario-login h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.formulario-login input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.formulario-login input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.formulario-login .boton-claro {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.pie-login {
+  text-align: center;
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.pie-login a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pie-login a:hover {
+  text-decoration: underline;
+}
+
+/* Página de registro */
+.contenedor-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+  background-color: #111;
+}
+
+.formulario-registro {
+  background-color: #1c1c1c;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.formulario-registro h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.formulario-registro input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.formulario-registro input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.formulario-registro .boton-claro {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.pie-registro {
+  text-align: center;
+  margin-top: 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.pie-registro a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.pie-registro a:hover {
+  text-decoration: underline;
+}
