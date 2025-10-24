@@ -11,9 +11,10 @@
     <nav class="navegacion">
       <div class="menu-izquierdo">
         <div class="logo">
-            <a href="../index.html">
-             <img src="../imagenes/Home.png"></div>
-            </a></div>
+          <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="Logo">
+          </a>
+        </div>
         <ul class="lista-menu">
           <li><a href="./indexcatalogo.html">Portátiles</a></li>
           <li><a href="./indexcatalogo.html">Sobremesa</a></li>
@@ -23,12 +24,13 @@
       </div>
       <div class="menu-derecho">
         <input type="text" placeholder="Buscar producto" class="buscador" />
-        <a href="../login.html"><button class="boton-claro">Iniciar sesión</button></a>
-        <a href="../registro.html"><button class="boton-oscuro">Crea cuenta</button></a>
+        <a href="../login.html"><button class="boton boton-claro">Iniciar sesión</button></a>
+        <a href="../registro.html"><button class="boton boton-oscuro">Crea cuenta</button></a>
         <div class="carrito"> 
-            <a href="../carrito.html">
-                <img src="../imagenes/carrito.png"></div>
-            </a></div>
+          <a href="../carrito.html">
+            <img src="../imagenes/carrito.png" alt="Carrito">
+          </a>
+        </div>
       </div>
     </nav>
   </header>
@@ -37,69 +39,202 @@
     <h1 class="titulo-catalogo">MSI PS Series (20)</h1>
 
     <div class="contenedor-catalogo">
-      <aside class="filtros">
+      <aside class="filtros" style="flex:0 0 300px;">
         <h2>Filtros</h2>
+
         <div class="bloque-filtro">
           <h3>Categoría</h3>
           <ul>
-            <li><a href="#">MSI All-in-One</a></li>
-            <li><a href="#">HP/Compaq PCs</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">MSI All-in-One</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">HP/Compaq PCs</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">MSI Gaming</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">Portátiles Ultrabook</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">Portátiles para Creativos</a></li>
           </ul>
         </div>
 
         <div class="bloque-filtro">
           <h3>Precio</h3>
           <ul>
-            <li><a href="#">$400 - $500</a></li>
-            <li><a href="#">$500 - $600</a></li>
-            <li><a href="#">$600 - $800</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">$400 - $500</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">$500 - $600</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">$600 - $800</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">$800 - $1000</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">Más de $1000</a></li>
           </ul>
         </div>
+
+        <div class="bloque-filtro">
+          <h3>RAM</h3>
+          <ul>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">8GB</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">16GB</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">32GB</a></li>
+          </ul>
+        </div>
+
+        <div class="bloque-filtro">
+          <h3>Procesador</h3>
+          <ul>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">Intel Core i5</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">Intel Core i7</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">Intel Core i9</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">AMD Ryzen 5</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">AMD Ryzen 7</a></li>
+          </ul>
+        </div>
+
+        <div class="bloque-filtro">
+          <h3>Tarjeta Gráfica</h3>
+          <ul>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">NVIDIA GTX 1650</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">NVIDIA RTX 2060</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">NVIDIA RTX 2070</a></li>
+            <li><span style="font-size:1.5rem; color:var(--color-dorado);">•</span> <a href="#">NVIDIA RTX 3060</a></li>
+          </ul>
+        </div>
+
       </aside>
 
       <section class="productos">
         <a href="./producto1.html">
           <div class="producto">
-          <img src="../imagenes/MSI_PS_desktop.jpg" alt="MSI PS Desktop">
-          <div class="detalles">
-            <h3>MSI Creator 17 A10SF</h3>
-            <p>Intel Core i7, 16GB RAM, RTX 2070, SSD 1TB</p>
-            <p class="precio"><span class="precio-antiguo">$599.00</span> $499.00</p>
-            <button class="boton-azul">Comprar ahora</button>
+            <img src="../imagenes/MSI_PS_desktop.jpg" alt="MSI PS Desktop">
+            <div class="detalles">
+              <h3>MSI Creator 17 A10SF</h3>
+              <p>Intel Core i7, 16GB RAM, RTX 2070, SSD 1TB</p>
+              <p class="precio"><span class="precio-antiguo">$599.00</span> $499.00</p>
+            </div>
           </div>
-        </div>
         </a>
         
-      <a href="./producto1.html">
-        <div class="producto">
-          <img src="../imagenes/MSI_PC.jpg" alt="MSI Prestige 14">
-          <div class="detalles">
-            <h3>MSI Prestige 14</h3>
-            <p>Intel Core i7, 16GB RAM, GTX 1650, SSD 512GB</p>
-            <p class="precio"><span class="precio-antiguo">$549.00</span> $499.00</p>
-            <button class="boton-azul">Comprar ahora</button>
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/MSI_PC.jpg" alt="MSI Prestige 14">
+            <div class="detalles">
+              <h3>MSI Prestige 14</h3>
+              <p>Intel Core i7, 16GB RAM, GTX 1650, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$549.00</span> $499.00</p>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
         
-      <a href="./producto1.html">
-         <div class="producto">
-          <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
-          <div class="detalles">
-            <h3>MSI Modern 15</h3>
-            <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
-            <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
-            <button class="boton-azul">Comprar ahora</button>
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <div class="detalles">
+              <h3>MSI Modern 15</h3>
+              <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
+            </div>
           </div>
-        </div>
-      </a>
-       
+        </a>
+
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <div class="detalles">
+              <h3>MSI Modern 15</h3>
+              <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <div class="detalles">
+              <h3>MSI Modern 15</h3>
+              <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <div class="detalles">
+              <h3>MSI Modern 15</h3>
+              <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <div class="detalles">
+              <h3>MSI Modern 15</h3>
+              <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <div class="detalles">
+              <h3>MSI Modern 15</h3>
+              <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="./producto1.html">
+          <div class="producto">
+            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <div class="detalles">
+              <h3>MSI Modern 15</h3>
+              <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
+              <p class="precio"><span class="precio-antiguo">$499.00</span> $459.00</p>
+            </div>
+          </div>
+        </a>
       </section>
     </div>
   </main>
 
   <footer class="pie">
-    <p>© 2025 NexoPC - Todos los derechos reservados</p>
+    <div class="seccion-pie">
+      <div class="suscripcion">
+        <h3>Inicia sesión con nosotros</h3>
+        <p>Sé el primero en conocer las últimas ofertas</p>
+        <form class="formulario-suscripcion">
+          <input type="email" placeholder="Email" required>
+          <button type="submit" class="boton boton-dorado">Suscribirse</button>
+        </form>
+      </div>
+
+      <div class="informacion">
+        <div>
+          <h4>Información</h4>
+          <ul>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Partes del PC</h4>
+          <ul>
+            <li><a href="#">CPU</a></li>
+            <li><a href="#">Placas base</a></li>
+            <li><a href="#">Memoria RAM</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Dirección</h4>
+          <p>Calle Capitulares 12, Córdoba, España</p>
+          <p>Tel: +34 957 123 456</p>
+          <p>Lunes a Viernes: 9:00 - 18:00</p>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

@@ -11,9 +11,10 @@
     <nav class="navegacion">
       <div class="menu-izquierdo">
         <div class="logo">
-            <a href="../index.html">
-             <img src="../imagenes/Home.png"></div>
-            </a></div>
+          <a href="../index.html">
+            <img src="../imagenes/logo.png" alt="Inicio">
+          </a>
+        </div>
         <ul class="lista-menu">
           <li><a href="./indexcatalogo.html">Portátiles</a></li>
           <li><a href="./indexcatalogo.html">Sobremesa</a></li>
@@ -23,41 +24,44 @@
       </div>
       <div class="menu-derecho">
         <input type="text" placeholder="Buscar producto" class="buscador" />
-        <button class="boton-claro">Iniciar sesión</button>
-        <button class="boton-oscuro">Crea cuenta</button>
+        <a href="../login.html"><button class="boton boton-claro">Iniciar sesión</button></a>
+        <a href="../registro.html"><button class="boton boton-oscuro">Crea cuenta</button></a>
         <div class="carrito"> 
-            <a href="../carrito.html">
-                <img src="../imagenes/carrito.png"></div>
-            </a></div>
+          <a href="../carrito.html">
+            <img src="../imagenes/carrito.png" alt="Carrito">
+          </a>
+        </div>
       </div>
     </nav>
   </header>
 
   <main class="detalle-producto">
     <div class="ruta">
-      <a href="../index.html">Inicio</a> › <a href="./indexcatalogo.html">Portátiles</a> › <span>MSI MPG Trident 3</span>
+      <a href="../index.html">Inicio</a> › 
+      <a href="./indexcatalogo.html">Portátiles</a> › 
+      <span>MSI MPG Trident 3</span>
     </div>
 
-    <section class="contenido-producto">
-      <div class="imagen-producto">
+    <section class="contenido-producto bloque">
+      <div class="imagen-bloque">
         <img src="../imagenes/ordenadorpng.png" alt="MSI MPG Trident 3" />
       </div>
 
-      <div class="info-producto">
+      <div class="texto-bloque info-producto">
         <h1>MSI MPG Trident 3</h1>
         <p class="descripcion">
           Intel i7 10700F · RTX 2060 SUPER · 16GB RAM · 512GB SSD + 2TB HDD · Windows 10 Home · Teclado y ratón incluidos · Garantía 3 años.
         </p>
         <p class="sku">SKU: D0554A</p>
 
-        <div class="precio-producto">
+        <div class="precio">
           <span class="precio-antiguo">$3,499.00</span>
           <span class="precio-actual">$3,299.00</span>
         </div>
 
         <div class="acciones-compra">
           <input type="number" value="1" min="1" class="cantidad" />
-          <a href="../carrito.html"><button class="boton-azul">Añadir al carrito</button></a>
+          <a href="../carrito.html"><button class="boton boton-azul">Añadir al carrito</button></a>
         </div>
 
         <div class="mas-informacion">
@@ -79,7 +83,7 @@
         <p>Recibe las últimas ofertas y novedades.</p>
         <form class="formulario-suscripcion">
           <input type="email" placeholder="Tu correo electrónico" required />
-          <button>Suscribirme</button>
+          <button class="boton boton-claro">Suscribirme</button>
         </form>
       </div>
 

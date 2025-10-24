@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NexoPC - Tienda de ordenadores</title>
   <link rel="stylesheet" href="index.css">
+  <link  rel="icon" type="image/x-icon" href="./imagenes/imagen_2025-10-24_135036670-removebg-preview.png">
 </head>
 <body>
   <header class="encabezado">
@@ -12,8 +13,9 @@
       <div class="menu-izquierdo">
         <div class="logo">
           <a href="./index.html">
-            <img src="./imagenes/Home.png"></div>
+            <img src="./imagenes/logo.ico" alt="Inicio">
           </a>
+        </div>
         <ul class="lista-menu">
           <li><a href="./catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
           <li><a href="./catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
@@ -21,14 +23,16 @@
           <li><a href="./catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
         </ul>
       </div>
+
       <div class="menu-derecho">
-        <input type="text" placeholder="Introduce el texto" class="buscador">
-        <a href="./login.html"><button class="boton-claro">Iniciar sesión</button></a>
-        <a href="./registro.html"><button class="boton-oscuro">Crea cuenta</button></a>
+        <input type="text" placeholder="Buscar..." class="buscador">
+        <a href="./login.html" class="boton boton-dorado">Iniciar sesión</a>
+        <a href="./registro.html" class="boton boton-oscuro">Crear cuenta</a>
         <div class="carrito">
           <a href="./carrito.html">
-            <img src="./imagenes/carrito.png"></div>
+            <img src="./imagenes/carrito.png" alt="Carrito de compras">
           </a>
+        </div>
       </div>
     </nav>
   </header>
@@ -38,7 +42,8 @@
     <p class="subtitulo">Tu tienda de ordenadores de confianza</p>
   </section>
 
-  <section class="bloque-negro">
+
+  <section class="bloque">
     <div class="contenido-bloque">
       <div class="texto-bloque">
         <h2>Superar a la competencia</h2>
@@ -49,12 +54,12 @@
         <a href="./catalogo_portatiles/producto1.html">
           <img src="./imagenes/Intel-Core-i7.jpg" alt="Procesador Intel Core i7">
         </a>
-        
       </div>
     </div>
   </section>
 
-  <section class="bloque-blanco">
+
+  <section class="bloque">
     <div class="contenido-bloque">
       <div class="imagen-bloque">
         <a href="./catalogo_portatiles/indexcatalogo.html">
@@ -73,10 +78,10 @@
       <div class="suscripcion">
         <h3>Inicia sesión con nosotros</h3>
         <p>Sé el primero en conocer las últimas ofertas</p>
-        <div class="formulario-suscripcion">
-          <input type="email" placeholder="Email">
-          <button>Suscribirse</button>
-        </div>
+        <form class="formulario-suscripcion">
+          <input type="email" placeholder="Email" required>
+          <button type="submit" class="boton boton-dorado">Suscribirse</button>
+        </form>
       </div>
 
       <div class="informacion">

@@ -7,40 +7,43 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+  <!-- ======== ENCABEZADO ======== -->
   <header class="encabezado">
     <nav class="navegacion">
       <div class="menu-izquierdo">
         <div class="logo">
           <a href="../index.html">
-            <img src="../imagenes/Home.png" alt="Inicio">
+            <img src="../imagenes/logo.png" alt="Inicio">
           </a>
         </div>
         <ul class="lista-menu">
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Tablets</a></li>
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
+          <li><a href="../catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
+          <li><a href="../catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
+          <li><a href="../catalogo_portatiles/indexcatalogo.html">Tablets</a></li>
+          <li><a href="../catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
         </ul>
       </div>
+
       <div class="menu-derecho">
         <input type="text" placeholder="Buscar producto" class="buscador">
-        <a href="./login.html"><button class="boton-claro">Iniciar sesión</button></a>
-        <a href="./registro.html"><button class="boton-oscuro">Crea cuenta</button></a>
+        <a href="./login.html"><button class="boton boton-claro">Iniciar sesión</button></a>
+        <a href="./registro.html"><button class="boton boton-oscuro">Crea cuenta</button></a>
         <div class="carrito">
           <a href="./carrito.html">
-            <img src="./imagenes/carrito.png"></div>
-          </a></div>
+            <img src="./imagenes/carrito.png" alt="Carrito">
+          </a>
+        </div>
       </div>
     </nav>
   </header>
 
-  <main class="catalogo" style="min-height: 70vh;">
+
+  <main class="catalogo">
     <h1 class="titulo-catalogo">Carrito de la compra</h1>
 
-    <div class="contenedor-catalogo" style="align-items: flex-start;">
+    <div class="contenedor-catalogo">
 
-      <!-- Lista de productos -->
-      <section class="productos" style="flex: 2;">
+      <section class="productos">
         <div class="producto">
           <img src="./imagenes/ordenadorpng.png" alt="MSI MPG Trident 3">
           <div class="detalles">
@@ -53,7 +56,7 @@
             </div>
             <input type="number" value="1" min="1" class="cantidad">
           </div>
-          <button class="boton-oscuro">Eliminar</button>
+          <button class="boton boton-oscuro">Eliminar</button>
         </div>
 
         <div class="producto">
@@ -68,31 +71,29 @@
             </div>
             <input type="number" value="1" min="1" class="cantidad">
           </div>
-          <button class="boton-oscuro">Eliminar</button>
+          <button class="boton boton-oscuro">Eliminar</button>
         </div>
 
         <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
-          <button class="boton-oscuro">Seguir comprando</button>
-          <button class="boton-oscuro">Vaciar carrito</button>
-          <button class="boton-azul">Actualizar carrito</button>
+          <button class="boton boton-oscuro">Seguir comprando</button>
+          <button class="boton boton-oscuro">Vaciar carrito</button>
+          <button class="boton boton-azul">Actualizar carrito</button>
         </div>
       </section>
 
-      <!-- Resumen de compra -->
-      <aside class="filtros" style="flex: 1; background-color: #f2f2f2;">
+
+      <aside class="filtros">
         <h2>Resumen de la compra</h2>
         <p>Subtotal: <strong>€5,298.00</strong></p>
         <p>IVA (21%): <strong>€1,112.58</strong></p>
         <hr>
         <p><strong>Total: €6,410.58</strong></p>
 
-        <button class="boton-azul" style="width: 100%; margin-top: 1rem;">Pagar</button>
-        <button class="boton-claro" style="width: 100%; margin-top: 0.5rem;">Check out con PayPal</button>
+        <button class="boton boton-azul" style="width: 100%; margin-top: 1rem;">Pagar</button>
+        <button class="boton boton-claro" style="width: 100%; margin-top: 0.5rem;">Check out con PayPal</button>
       </aside>
-
     </div>
 
-    <!-- Información adicional -->
     <section class="bloque-blanco" style="margin-top: 3rem; border-radius: 15px;">
       <div class="contenido-bloque">
         <div class="texto-bloque">
@@ -118,7 +119,7 @@
         <p>Recibe las últimas ofertas y novedades.</p>
         <form class="formulario-suscripcion">
           <input type="email" placeholder="Tu correo electrónico" required>
-          <button>Suscribirme</button>
+          <button class="boton boton-dorado">Suscribirme</button>
         </form>
       </div>
 
