@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NexoPC - Tienda de ordenadores</title>
   <link rel="stylesheet" href="index.css">
-  <link  rel="icon" type="image/x-icon" href="./imagenes/logoweb.ico">
+  <link rel="icon" type="image/x-icon" href="./imagenes/logoweb.ico">
 </head>
+
 <body>
   <header class="encabezado">
     <nav class="navegacion">
+
       <div class="menu-izquierdo">
         <div class="logo">
-          <a href="./index.html">
+          <a href="./index.html" data-sonido="true">
             <img src="./imagenes/logo.png" alt="Inicio">
           </a>
         </div>
+
         <ul class="lista-menu">
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Tablets</a></li>
-          <li><a href="./catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
+          <li><a href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Portátiles</a></li>
+          <li><a href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Sobremesa</a></li>
+          <li><a href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Tablets</a></li>
+          <li><a href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Móvil</a></li>
         </ul>
       </div>
 
       <div class="menu-derecho">
         <input type="text" placeholder="Buscar..." class="buscador">
-        <a href="./login.html" class="boton boton-dorado">Iniciar sesión</a>
-        <a href="./registro.html" class="boton boton-oscuro">Crear cuenta</a>
+
+        <a href="./login.html" class="boton boton-dorado" data-sonido="true">Iniciar sesión</a>
+        <a href="./registro.html" class="boton boton-oscuro" data-sonido="true">Crear cuenta</a>
+
         <div class="carrito">
-          <a href="./carrito.html">
+          <a href="./carrito.html" data-sonido="true">
             <img src="./imagenes/carrito.png" alt="Carrito de compras">
           </a>
         </div>
       </div>
+
     </nav>
   </header>
 
@@ -42,75 +49,103 @@
     <p class="subtitulo">Tu tienda de ordenadores de confianza</p>
   </section>
 
+  <section class="video-presentacion">
+    <video class="video-banner" autoplay muted loop>
+      <source src="./assets/videos/presentacion.mp4" type="video/mp4">
+    </video>
+  </section>
 
   <section class="bloque">
     <div class="contenido-bloque">
+
       <div class="texto-bloque">
         <h2>Superar a la competencia</h2>
-        <p>Experimenta una mejora del 40 % en la capacidad de procesamiento con respecto a la generación anterior. La computadora de escritorio MSI equipa el procesador Intel Core i7 de 10ª generación con la máxima potencia de procesamiento para ofrecerte una experiencia de juego inigualable.</p>
+        <p>Experimenta una mejora del 40 % en la capacidad de procesamiento con respecto a la generación anterior. La
+          computadora de escritorio MSI equipa el procesador Intel Core i7 de 10ª generación con la máxima potencia de
+          procesamiento para ofrecerte una experiencia de juego inigualable.</p>
         <p>Rendimiento comparado con el i7-9700. Las especificaciones varían según el modelo.</p>
       </div>
+
       <div class="imagen-bloque">
-        <a href="./catalogo_portatiles/producto1.html">
+        <a href="./catalogo_portatiles/producto1.html" data-sonido="true">
           <img src="./imagenes/Intel-Core-i7.jpg" alt="Procesador Intel Core i7">
         </a>
       </div>
+
     </div>
   </section>
-
 
   <section class="bloque">
     <div class="contenido-bloque">
+
       <div class="imagen-bloque">
-        <a href="./catalogo_portatiles/indexcatalogo.html">
+        <a href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">
           <img src="./imagenes/pcgaming.jpg" alt="PC gaming">
         </a>
       </div>
+
       <div class="texto-bloque">
         <h2>La más alta calidad de productos</h2>
-        <p>Garantizamos la más alta calidad de los productos que vendemos. Varias décadas de éxito y millones de clientes satisfechos nos dan la certeza. Además, todos nuestros productos pasan un riguroso control de calidad, por lo que ninguna discrepancia en las características escapa a la atención de nuestros profesionales.</p>
+        <p>Garantizamos la más alta calidad de los productos que vendemos. Varias décadas de éxito y millones de
+          clientes satisfechos nos dan la certeza. Además, todos nuestros productos pasan un riguroso control de
+          calidad, por lo que ninguna discrepancia en las características escapa a la atención de nuestros
+          profesionales.</p>
       </div>
+
     </div>
   </section>
 
-  <footer class="pie"> 
+  <footer class="pie">
     <div class="seccion-pie">
+
       <div class="suscripcion">
         <h3>Inicia sesión con nosotros</h3>
         <p>Sé el primero en conocer las últimas ofertas</p>
+
         <form class="formulario-suscripcion">
           <input type="email" placeholder="Email" required>
-          <button type="submit" class="boton boton-dorado">Suscribirse</button>
+          <button type="submit" class="boton boton-dorado" data-sonido="true">Suscribirse</button>
         </form>
       </div>
 
       <div class="informacion">
+
         <div>
           <h4>Información</h4>
           <ul>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos</a></li>
-            <li><a href="https://pagina-web-nu-murex.vercel.app/index.html">nexoPC</a> © 2025 by <a href="https://github.com/SamuelPeAg/Pagina-Web/tree/main">Samuel Peña Aguayo</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></li>
+            <li><a href="#" data-sonido="true">Acerca de</a></li>
+            <li><a href="#" data-sonido="true">Política de privacidad</a></li>
+            <li><a href="#" data-sonido="true">Términos</a></li>
+            <li>
+              <a href="https://pagina-web-nu-murex.vercel.app/index.html" data-sonido="true">nexoPC</a> © 2025 by
+              <a href="https://github.com/SamuelPeAg/Pagina-Web/tree/main" data-sonido="true">Samuel Peña Aguayo</a>
+              is licensed under
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" data-sonido="true">CC BY-NC-SA 4.0</a>
+            </li>
           </ul>
         </div>
+
         <div>
           <h4>Partes del PC</h4>
           <ul>
-            <li><a href="#">CPU</a></li>
-            <li><a href="#">Placas base</a></li>
-            <li><a href="#">Memoria RAM</a></li>
+            <li><a href="#" data-sonido="true">CPU</a></li>
+            <li><a href="#" data-sonido="true">Placas base</a></li>
+            <li><a href="#" data-sonido="true">Memoria RAM</a></li>
           </ul>
         </div>
+
         <div>
           <h4>Dirección</h4>
           <p>Calle Capitulares 12, Córdoba, España</p>
           <p>Tel: +34 957 123 456</p>
           <p>Lunes a Viernes: 9:00 - 18:00</p>
         </div>
+
       </div>
     </div>
-    
   </footer>
+  <audio id="sonido-click" src="./assets/sonidos/click.mp3"></audio>
+  <script src="index.js"></script>
 </body>
+
 </html>
