@@ -1,0 +1,49 @@
+.slider {
+
+  margin-top: 50px;
+  width: 4000PX;
+  height: 500px;
+  margin-left: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  height: 500px;
+  width: 3400px;
+  animation: slideAnimation 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  
+  width: 2400px;
+  height:600px;
+  object-fit: contain;
+  position: relative;
+  margin-top: -150px;      
+  margin-bottom: 90px;
+  background: #000;
+  transition: transform 20s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+/* Animación */
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(0); }
+
+  36% { transform: translateX(-100%); }
+  66% { transform: translateX(-100%); }
+
+  69% { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}

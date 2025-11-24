@@ -1,0 +1,33 @@
+/* _global.scss */
+@use 'variables' as v;  // Usamos un alias 'v' para acceder a las variables
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: v.$color-fondo;  // Usa 'v.' en lugar de 'variables.'
+  color: v.$color-texto;
+  font-family: v.$fuente;
+  line-height: 1.6;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  border-radius: v.$radio;  // Usando 'v.' para acceder a las variables
+  transition: transform v.$transicion;
+}
+
+img:hover {
+  transform: scale(1.03);
+}

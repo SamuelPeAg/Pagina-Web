@@ -1,0 +1,100 @@
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 2rem;
+}
+
+.formulario-login {
+  background-color: var(--color-superficie);
+  padding: 3rem 2rem;
+  border-radius: var(--radio);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.formulario-login h2 {
+  color: var(--color-dorado);
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.formulario-login input {
+  background-color: #111;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  padding: 0.7rem 1rem;
+  color: var(--color-texto);
+  width: 100%;
+  transition: border var(--transicion), box-shadow var(--transicion);
+}
+
+.formulario-login input:focus {
+  outline: none;
+  border-color: var(--color-dorado);
+  box-shadow: 0 0 8px rgba(198,163,79,0.3);
+}
+
+.pie-login {
+  text-align: center;
+  color: var(--color-texto-secundario);
+}
+
+.pie-login a {
+  color: var(--color-dorado);
+  text-decoration: none;
+  transition: all var(--transicion);
+}
+
+.pie-login a:hover {
+  text-decoration: underline;
+}
+
+.filtros label {
+  display: flex;              
+  align-items: center;
+  font-size: 1rem;            
+  color: var(--color-blanco); 
+  margin-bottom: 0.5rem;      
+  cursor: pointer;          
+}
+
+.filtros label input[type="checkbox"] {
+  accent-color: var(--color-dorado); 
+  margin-right: 0.5rem;              
+  width: 1.2rem;                     
+  height: 1.2rem;
+}
+
+.filtros ul {
+  list-style: none; 
+  padding-left: 0;
+}
+
+.filtros h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-dorado); 
+}
+
+/* video */
+.video-presentacion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 60px 0;
+}
+
+.video-banner {
+  width: 75%;
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.35);
+  display: block;
+}

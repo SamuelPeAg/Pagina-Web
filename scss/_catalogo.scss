@@ -1,0 +1,59 @@
+.catalogo {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titulo-catalogo {
+  text-align: center;
+  color: var(--color-dorado);
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.contenedor-catalogo {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ======== FILTROS DEL CATÁLOGO ======== */
+.filtros {
+  width: 250px;
+  background-color: var(--color-superficie);
+  padding: 1rem;
+  border-radius: var(--radio);
+  border: 1px solid var(--color-borde);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filtros h2 {
+  color: var(--color-dorado);
+  margin-bottom: 1rem;
+}
+
+.bloque-filtro h3 {
+  color: var(--color-dorado);
+  margin-bottom: 0.5rem;
+}
+
+.bloque-filtro ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bloque-filtro ul li {
+  margin-bottom: 0.5rem;
+}
+
+.bloque-filtro ul li a {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  transition: color var(--transicion);
+}
+
+.bloque-filtro ul li a:hover {
+  color: var(--color-dorado);
+}
+
