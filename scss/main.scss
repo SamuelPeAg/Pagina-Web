@@ -1,8 +1,15 @@
-@use 'variables';  // Importa las variables
-@use 'global';     // Estilos globales
-@use 'header';     // Estilos del encabezado
-@use 'footer';     // Estilos del pie de página
-@use 'catalogo';   // Estilos del catálogo
-@use 'producto';   // Estilos de producto
-@use 'slider';     // Estilos del slider
-@use 'login';      // Estilos del login
+// main.scss
+
+// 1. Estructura básica y diseño
+@use '_encabezado';  // Encabezado de la página
+@use '_pie';         // Pie de página
+@use '_catalogo';     // Catálogo de productos
+@use '_presentacion'; // Sección de presentación
+
+// 2. Componentes específicos
+@use '_botones';     // Estilos para los botones
+@use '_login';        // Estilos para login y registro
+
+// 3. Estilos adicionales
+@use '_slider';      
+

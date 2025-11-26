@@ -1,0 +1,87 @@
+$color-fondo: #0d0d0d;
+$color-superficie: #1a1a1a;
+$color-dorado: #c6a34f;
+$color-dorado-suave: #d4b75d;
+$color-texto: #f5f5f5;
+$color-texto-secundario: #c0c0c0;
+$color-resaltado: #8bbcff;
+$color-borde: #2a2a2a;
+$color-azul: #4a90e2;
+$color-azul-claro: #66aaff;
+$transicion: 0.3s ease;
+$radio: 10px;
+$fuente: "Poppins", "Segoe UI", sans-serif;
+
+
+.presentacion {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(to bottom, #121212, #0d0d0d);
+}
+
+.titulo {
+  font-size: 3rem;
+  color: $color-dorado;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: $color-texto-secundario;
+  font-size: 1.2rem;
+}
+
+/* ======== BLOQUES DE CONTENIDO ======== */
+.bloque {
+  background-color: $color-superficie;
+  padding: 4rem 2rem;
+  border-top: 1px solid $color-borde;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contenido-bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto-bloque {
+  flex: 1;
+}
+
+.texto-bloque h2,
+.texto-bloque h3 {
+  color: $color-dorado;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.texto-bloque p {
+  color: $color-texto-secundario;
+  margin-bottom: 1rem;
+}
+
+.imagen-bloque {
+  flex: 1;
+  text-align: center;
+}
+
+.imagen-bloque img {
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(198,163,79,0.15);
+}

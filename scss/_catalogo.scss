@@ -1,3 +1,18 @@
+$color-fondo: #0d0d0d;
+$color-superficie: #1a1a1a;
+$color-dorado: #c6a34f;
+$color-dorado-suave: #d4b75d;
+$color-texto: #f5f5f5;
+$color-texto-secundario: #c0c0c0;
+$color-resaltado: #8bbcff;
+$color-borde: #2a2a2a;
+$color-azul: #4a90e2;
+$color-azul-claro: #66aaff;
+$transicion: 0.3s ease;
+$radio: 10px;
+$fuente: "Poppins", "Segoe UI", sans-serif;
+
+
 .catalogo {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -6,7 +21,7 @@
 
 .titulo-catalogo {
   text-align: center;
-  color: var(--color-dorado);
+  color: $color-dorado;
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
@@ -19,22 +34,22 @@
 /* ======== FILTROS DEL CATÁLOGO ======== */
 .filtros {
   width: 250px;
-  background-color: var(--color-superficie);
+  background-color: $color-superficie;
   padding: 1rem;
-  border-radius: var(--radio);
-  border: 1px solid var(--color-borde);
+  border-radius: $radio;
+  border: 1px solid $color-borde;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .filtros h2 {
-  color: var(--color-dorado);
+  color: $color-dorado;
   margin-bottom: 1rem;
 }
 
 .bloque-filtro h3 {
-  color: var(--color-dorado);
+  color: $color-dorado;
   margin-bottom: 0.5rem;
 }
 
@@ -48,12 +63,186 @@
 }
 
 .bloque-filtro ul li a {
-  color: var(--color-texto-secundario);
+  color: $color-texto-secundario;
   text-decoration: none;
-  transition: color var(--transicion);
+  transition: color $transicion;
 }
 
 .bloque-filtro ul li a:hover {
-  color: var(--color-dorado);
+  color: $color-dorado;
 }
 
+/* ======== PRODUCTOS ======== */
+.productos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: $color-superficie;
+  padding: 1.2rem;
+  border: 1px solid $color-borde;
+  border-radius: $radio;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform $transicion, box-shadow $transicion;
+}
+
+.producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(198,163,79,0.15);
+}
+
+.producto img {
+  width: 140px;
+  height: auto;
+}
+
+.detalles {
+  flex: 1;
+}
+
+.detalles h3 {
+  color: $color-dorado;
+  margin-bottom: 0.3rem;
+}
+
+.detalles p {
+  color: $color-texto-secundario;
+  margin-bottom: 0.4rem;
+}
+
+.precio {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.precio-antiguo {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ======== CANTIDAD / SKU ======== */
+.sku {
+  font-size: 0.9rem;
+  color: $color-resaltado;
+}
+
+.cantidad {
+  width: 60px;
+  background-color: #111;
+  color: $color-texto;
+  border: 1px solid $color-borde;
+  border-radius: $radio;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+/* ======== DETALLE DE PRODUCTO ======== */
+.detalle-producto {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;       
+}
+
+.ruta {
+  font-size: 0.9rem;
+  color: $color-texto-secundario;
+  margin-bottom: 1rem;
+}
+
+.ruta a {
+  color: $color-resaltado;
+  text-decoration: none;
+}
+
+.ruta a:hover {
+  color: $color-dorado;
+}
+
+.contenido-producto {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.imagen-producto {
+  flex: 1;
+  min-width: 300px;
+  background-color: $color-superficie;
+  padding: 1rem;
+  border-radius: $radio;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: transform $transicion, box-shadow $transicion;
+}
+
+.imagen-producto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(198,163,79,0.2);
+}
+
+.info-producto {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-producto h1 {
+  color: $color-dorado;
+  font-size: 2rem;
+}
+
+.descripcion {
+  color: $color-texto-secundario;
+}
+
+.precio-producto {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.precio-actual {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: $color-dorado;
+}
+
+.acciones-compra {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.acciones-compra input.cantidad {
+  width: 60px;
+}
+
+.mas-informacion h3 {
+  color: $color-dorado;
+  margin-bottom: 0.5rem;
+}
+
+.mas-informacion ul {
+  list-style: disc;
+  margin-left: 1.2rem;
+  color: $color-texto-secundario;
+}

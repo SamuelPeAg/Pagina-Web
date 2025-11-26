@@ -1,0 +1,125 @@
+$color-fondo: #0d0d0d;
+$color-superficie: #1a1a1a;
+$color-dorado: #c6a34f;
+$color-dorado-suave: #d4b75d;
+$color-texto: #f5f5f5;
+$color-texto-secundario: #c0c0c0;
+$color-resaltado: #8bbcff;
+$color-borde: #2a2a2a;
+$color-azul: #4a90e2;
+$color-azul-claro: #66aaff;
+$transicion: 0.3s ease;
+$radio: 10px;
+$fuente: "Poppins", "Segoe UI", sans-serif;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: $color-fondo;
+  color: $color-texto;
+  font-family: $fuente;
+  line-height: 1.6;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  border-radius: $radio;
+  transition: transform $transicion;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+.encabezado {
+  background-color: $color-superficie;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-izquierdo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo img {
+  width: 70px;
+  height: 50px;
+  filter: brightness(1.2);
+  transition: transform $transicion;
+}
+
+.logo img:hover {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.lista-menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.lista-menu a {
+  text-decoration: none;
+  color: $color-texto-secundario;
+  font-weight: 500;
+  transition: color $transicion;
+}
+
+.lista-menu a:hover {
+  color: $color-dorado;
+}
+
+.menu-derecho {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buscador {
+  background-color: #111;
+  border: 1px solid $color-borde;
+  color: $color-texto;
+  padding: 0.5rem 1rem;
+  border-radius: $radio;
+  transition: border $transicion, box-shadow $transicion;
+}
+
+.buscador:focus {
+  outline: none;
+  border-color: $color-dorado;
+  box-shadow: 0 0 8px rgba(198,163,79,0.3);
+}
+
+.carrito img {
+  width: 28px;
+  height: 28px;
+  transition: transform $transicion;
+}
+
+.carrito img:hover {
+  transform: scale(1.15);
+}

@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* _variables.scss */
-/* _global.scss */
 * {
   margin: 0;
   padding: 0;
@@ -32,9 +30,8 @@ img:hover {
   transform: scale(1.03);
 }
 
-/* _header.scss */
 .encabezado {
-  background-color: var(--color-superficie);
+  background-color: #1a1a1a;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   padding: 1rem 2rem;
   position: sticky;
@@ -58,7 +55,7 @@ img:hover {
   width: 70px;
   height: 50px;
   filter: brightness(1.2);
-  transition: transform var(--transicion);
+  transition: transform 0.3s ease;
 }
 
 .logo img:hover {
@@ -73,13 +70,13 @@ img:hover {
 
 .lista-menu a {
   text-decoration: none;
-  color: var(--color-texto-secundario);
+  color: #c0c0c0;
   font-weight: 500;
-  transition: color var(--transicion);
+  transition: color 0.3s ease;
 }
 
 .lista-menu a:hover {
-  color: var(--color-dorado);
+  color: #c6a34f;
 }
 
 .menu-derecho {
@@ -90,30 +87,29 @@ img:hover {
 
 .buscador {
   background-color: #111;
-  border: 1px solid var(--color-borde);
-  color: var(--color-texto);
+  border: 1px solid #2a2a2a;
+  color: #f5f5f5;
   padding: 0.5rem 1rem;
-  border-radius: var(--radio);
-  transition: border var(--transicion), box-shadow var(--transicion);
+  border-radius: 10px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .buscador:focus {
   outline: none;
-  border-color: var(--color-dorado);
+  border-color: #c6a34f;
   box-shadow: 0 0 8px rgba(198, 163, 79, 0.3);
 }
 
 .carrito img {
   width: 28px;
   height: 28px;
-  transition: transform var(--transicion);
+  transition: transform 0.3s ease;
 }
 
 .carrito img:hover {
   transform: scale(1.15);
 }
 
-/* _footer.scss */
 .pie {
   background-color: #111;
   padding: 3rem 2rem;
@@ -159,6 +155,20 @@ img:hover {
   margin-bottom: 0.5rem;
 }
 
+.informacion a {
+  color: #c0c0c0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.informacion a:hover {
+  color: #c6a34f;
+}
+
+.pie p {
+  margin-bottom: 0.5rem;
+}
+
 .catalogo {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -167,7 +177,7 @@ img:hover {
 
 .titulo-catalogo {
   text-align: center;
-  color: var(--color-dorado);
+  color: #c6a34f;
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
@@ -180,22 +190,22 @@ img:hover {
 /* ======== FILTROS DEL CATÁLOGO ======== */
 .filtros {
   width: 250px;
-  background-color: var(--color-superficie);
+  background-color: #1a1a1a;
   padding: 1rem;
-  border-radius: var(--radio);
-  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .filtros h2 {
-  color: var(--color-dorado);
+  color: #c6a34f;
   margin-bottom: 1rem;
 }
 
 .bloque-filtro h3 {
-  color: var(--color-dorado);
+  color: #c6a34f;
   margin-bottom: 0.5rem;
 }
 
@@ -209,13 +219,13 @@ img:hover {
 }
 
 .bloque-filtro ul li a {
-  color: var(--color-texto-secundario);
+  color: #c0c0c0;
   text-decoration: none;
-  transition: color var(--transicion);
+  transition: color 0.3s ease;
 }
 
 .bloque-filtro ul li a:hover {
-  color: var(--color-dorado);
+  color: #c6a34f;
 }
 
 /* ======== PRODUCTOS ======== */
@@ -230,12 +240,12 @@ img:hover {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background-color: var(--color-superficie);
+  background-color: #1a1a1a;
   padding: 1.2rem;
-  border: 1px solid var(--color-borde);
-  border-radius: var(--radio);
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  transition: transform var(--transicion), box-shadow var(--transicion);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .producto:hover {
@@ -253,12 +263,12 @@ img:hover {
 }
 
 .detalles h3 {
-  color: var(--color-dorado);
+  color: #c6a34f;
   margin-bottom: 0.3rem;
 }
 
 .detalles p {
-  color: var(--color-texto-secundario);
+  color: #c0c0c0;
   margin-bottom: 0.4rem;
 }
 
@@ -278,15 +288,15 @@ img:hover {
 /* ======== CANTIDAD / SKU ======== */
 .sku {
   font-size: 0.9rem;
-  color: var(--color-resaltado);
+  color: #8bbcff;
 }
 
 .cantidad {
   width: 60px;
   background-color: #111;
-  color: var(--color-texto);
-  border: 1px solid var(--color-borde);
-  border-radius: var(--radio);
+  color: #f5f5f5;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
   padding: 0.3rem;
   text-align: center;
 }
@@ -304,17 +314,17 @@ a {
 
 .ruta {
   font-size: 0.9rem;
-  color: var(--color-texto-secundario);
+  color: #c0c0c0;
   margin-bottom: 1rem;
 }
 
 .ruta a {
-  color: var(--color-resaltado);
+  color: #8bbcff;
   text-decoration: none;
 }
 
 .ruta a:hover {
-  color: var(--color-dorado);
+  color: #c6a34f;
 }
 
 .contenido-producto {
@@ -326,14 +336,14 @@ a {
 .imagen-producto {
   flex: 1;
   min-width: 300px;
-  background-color: var(--color-superficie);
+  background-color: #1a1a1a;
   padding: 1rem;
-  border-radius: var(--radio);
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  transition: transform var(--transicion), box-shadow var(--transicion);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imagen-producto:hover {
@@ -350,12 +360,12 @@ a {
 }
 
 .info-producto h1 {
-  color: var(--color-dorado);
+  color: #c6a34f;
   font-size: 2rem;
 }
 
 .descripcion {
-  color: var(--color-texto-secundario);
+  color: #c0c0c0;
 }
 
 .precio-producto {
@@ -368,7 +378,7 @@ a {
 .precio-actual {
   font-size: 1.6rem;
   font-weight: bold;
-  color: var(--color-dorado);
+  color: #c6a34f;
 }
 
 .acciones-compra {
@@ -383,73 +393,133 @@ a {
 }
 
 .mas-informacion h3 {
-  color: var(--color-dorado);
+  color: #c6a34f;
   margin-bottom: 0.5rem;
 }
 
 .mas-informacion ul {
   list-style: disc;
   margin-left: 1.2rem;
-  color: var(--color-texto-secundario);
+  color: #c0c0c0;
 }
 
-.slider {
-  margin-top: 50px;
-  width: 4000PX;
-  height: 500px;
-  margin-left: 60px;
-  overflow: hidden;
-  position: relative;
+.presentacion {
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(to bottom, #121212, #0d0d0d);
 }
 
-.slides {
+.titulo {
+  font-size: 3rem;
+  color: #c6a34f;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: #c0c0c0;
+  font-size: 1.2rem;
+}
+
+/* ======== BLOQUES DE CONTENIDO ======== */
+.bloque {
+  background-color: #1a1a1a;
+  padding: 4rem 2rem;
+  border-top: 1px solid #2a2a2a;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contenido-bloque {
   display: flex;
-  height: 500px;
-  width: 3400px;
-  animation: slideAnimation 12s infinite;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.slide {
-  width: 100%;
-  flex-shrink: 0;
+.texto-bloque {
+  flex: 1;
 }
 
-.slide img {
-  width: 2400px;
-  height: 600px;
-  object-fit: contain;
-  position: relative;
-  margin-top: -150px;
-  margin-bottom: 90px;
-  background: #000;
-  transition: transform 20s ease;
+.texto-bloque h2,
+.texto-bloque h3 {
+  color: #c6a34f;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 
-.slide img:hover {
-  transform: scale(1.05);
+.texto-bloque p {
+  color: #c0c0c0;
+  margin-bottom: 1rem;
 }
 
-/* Animación */
-@keyframes slideAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  33% {
-    transform: translateX(0);
-  }
-  36% {
-    transform: translateX(-100%);
-  }
-  66% {
-    transform: translateX(-100%);
-  }
-  69% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
+.imagen-bloque {
+  flex: 1;
+  text-align: center;
 }
+
+.imagen-bloque img {
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(198, 163, 79, 0.15);
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-dorado,
+.boton-claro {
+  background: linear-gradient(135deg, #c6a34f), #d4b75d;
+  color: #111;
+}
+
+.boton-dorado:hover,
+.boton-claro:hover {
+  box-shadow: 0 0 15px rgba(198, 163, 79, 0.6);
+  transform: translateY(-2px);
+}
+
+.boton-oscuro {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  border: 1px solid #2a2a2a;
+}
+
+.boton-oscuro:hover {
+  border-color: #c6a34f;
+  color: #d4b75d;
+}
+
+.boton-azul {
+  background: linear-gradient(135deg, #4a90e2, #66aaff);
+  color: #fff;
+}
+
+.boton-azul:hover {
+  box-shadow: 0 0 12px rgba(102, 170, 255, 0.5);
+  transform: translateY(-2px);
+}
+
 .contenedor-login {
   display: flex;
   justify-content: center;
@@ -459,9 +529,9 @@ a {
 }
 
 .formulario-login {
-  background-color: var(--color-superficie);
+  background-color: #1a1a1a;
   padding: 3rem 2rem;
-  border-radius: var(--radio);
+  border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
@@ -471,36 +541,36 @@ a {
 }
 
 .formulario-login h2 {
-  color: var(--color-dorado);
+  color: #c6a34f;
   text-align: center;
   font-size: 1.8rem;
 }
 
 .formulario-login input {
   background-color: #111;
-  border: 1px solid var(--color-borde);
-  border-radius: var(--radio);
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
   padding: 0.7rem 1rem;
-  color: var(--color-texto);
+  color: #f5f5f5;
   width: 100%;
-  transition: border var(--transicion), box-shadow var(--transicion);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .formulario-login input:focus {
   outline: none;
-  border-color: var(--color-dorado);
+  border-color: #c6a34f;
   box-shadow: 0 0 8px rgba(198, 163, 79, 0.3);
 }
 
 .pie-login {
   text-align: center;
-  color: var(--color-texto-secundario);
+  color: #c0c0c0;
 }
 
 .pie-login a {
-  color: var(--color-dorado);
+  color: #c6a34f;
   text-decoration: none;
-  transition: all var(--transicion);
+  transition: all 0.3s ease;
 }
 
 .pie-login a:hover {
@@ -511,13 +581,13 @@ a {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: var(--color-blanco);
+  color: #f5f5f5;
   margin-bottom: 0.5rem;
   cursor: pointer;
 }
 
 .filtros label input[type=checkbox] {
-  accent-color: var(--color-dorado);
+  accent-color: #c6a34f;
   margin-right: 0.5rem;
   width: 1.2rem;
   height: 1.2rem;
@@ -530,7 +600,7 @@ a {
 
 .filtros h3 {
   margin-bottom: 0.5rem;
-  color: var(--color-dorado);
+  color: #c6a34f;
 }
 
 /* video */
@@ -551,4 +621,66 @@ a {
   display: block;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/* ===============================
+   Estilos para el Slider
+   =============================== */
+.slider {
+  position: relative;
+  width: 500px; /* Ancho fijo del slider */
+  height: 400px; /* Altura fija para el slider */
+  margin: 0 auto; /* Centra el slider horizontalmente */
+  overflow: hidden; /* Oculta las imágenes que se salen del contenedor */
+}
+
+.slides {
+  display: flex;
+  animation: slideCarousel 12s infinite ease-in-out; /* Animación infinita para el slider */
+}
+
+.slide {
+  width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+  flex-shrink: 0; /* No permite que las imágenes se encojan */
+}
+
+.slide img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del contenedor */
+  object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor sin deformarse */
+}
+
+/* Animación de carrusel */
+@keyframes slideCarousel {
+  0%, 10% {
+    transform: translateX(0); /* Muestra la primera imagen */
+  }
+  20%, 30% {
+    transform: translateX(-100%); /* Desliza la primera imagen fuera */
+  }
+  40%, 50% {
+    transform: translateX(-200%); /* Desliza la segunda imagen fuera */
+  }
+  60%, 70% {
+    transform: translateX(-300%); /* Desliza la tercera imagen fuera */
+  }
+  80%, 90% {
+    transform: translateX(-400%); /* Mueve fuera la cuarta imagen (si tienes más imágenes) */
+  }
+  100% {
+    transform: translateX(0); /* Vuelve a la primera imagen */
+  }
+}
+/* Ajustes para pantallas pequeñas (responsive) */
+@media (max-width: 768px) {
+  .slider {
+    width: 100%; /* El slider ocupa el 100% del ancho disponible en pantallas pequeñas */
+    height: 250px; /* Menor altura en pantallas pequeñas */
+  }
+  .slides {
+    width: 300%; /* Mostrar 3 imágenes en pantallas pequeñas */
+  }
+  .slide img {
+    object-fit: contain; /* Ajusta la imagen sin recorte en pantallas pequeñas */
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
