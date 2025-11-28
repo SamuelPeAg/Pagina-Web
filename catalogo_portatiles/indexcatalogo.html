@@ -5,36 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NexoPC - Catálogo de Portátiles</title>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="icon" type="image/x-icon" href="../imagenes/logoweb.ico">
+  <link rel="icon" type="image/x-icon" href="../assets/imagenes/logoweb.ico">
 </head>
 <body>
-  <header class="encabezado">
-    <nav class="navegacion">
-      <div class="menu-izquierdo">
-        <div class="logo">
-          <a href="../index.html">
-            <img src="../imagenes/logo.png" alt="Logo">
-          </a>
-        </div>
-        <ul class="lista-menu">
-          <li><a href="./indexcatalogo.html">Portátiles</a></li>
-          <li><a href="./indexcatalogo.html">Sobremesa</a></li>
-          <li><a href="./indexcatalogo.html">Tablets</a></li>
-          <li><a href="./indexcatalogo.html">Móvil</a></li>
-        </ul>
+<header class="encabezado">
+  <nav class="navegacion container d-flex justify-content-between align-items-center">
+    <div class="menu-izquierdo d-flex align-items-center">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="./assets/imagenes/logo.png" alt="Inicio" class="img-fluid">
+        </a>
       </div>
-      <div class="menu-derecho">
-        <input type="text" placeholder="Buscar producto" class="buscador" />
-        <a href="../login.html"><button class="boton boton-claro">Iniciar sesión</button></a>
-        <a href="../registro.html"><button class="boton boton-oscuro">Crea cuenta</button></a>
-        <div class="carrito"> 
-          <a href="../carrito.html">
-            <img src="../imagenes/carrito.png" alt="Carrito">
-          </a>
-        </div>
+      <ul class="lista-menu nav">
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Tablets</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
+      </ul>
+    </div>
+
+    <div class="menu-derecho d-flex align-items-center">
+      <input type="text" placeholder="Buscar producto" class="buscador form-control form-control-sm" style="max-width: 220px;">
+      <a href="./login.html"><button class="btn btn-sm boton boton-claro ms-2">Iniciar sesión</button></a>
+      <a href="./registro.html"><button class="btn btn-sm boton boton-oscuro ms-2">Crea cuenta</button></a>
+      <div class="carrito ms-2">
+        <a href="./carrito.html">
+          <img src="./assets/imagenes/carrito.png" alt="Carrito" class="img-fluid">
+        </a>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
   <main class="catalogo">
     <h1 class="titulo-catalogo">MSI PS Series (20)</h1>
@@ -100,7 +101,7 @@
       <section class="productos">
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/MSI_PS_desktop.jpg" alt="MSI PS Desktop">
+            <img src="../assets/imagenes/MSI_PS_desktop.jpg" alt="MSI PS Desktop">
             <div class="detalles">
               <h3>MSI Creator 17 A10SF</h3>
               <p>Intel Core i7, 16GB RAM, RTX 2070, SSD 1TB</p>
@@ -111,7 +112,7 @@
         
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/MSI_PC.jpg" alt="MSI Prestige 14">
+            <img src="../assets/imagenes/MSI_PC.jpg" alt="MSI Prestige 14">
             <div class="detalles">
               <h3>MSI Prestige 14</h3>
               <p>Intel Core i7, 16GB RAM, GTX 1650, SSD 512GB</p>
@@ -122,7 +123,7 @@
         
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <img src="../assets/imagenes/ordenadorpng.png" alt="MSI Modern 15">
             <div class="detalles">
               <h3>MSI Modern 15</h3>
               <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
@@ -132,7 +133,7 @@
         </a>
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <img src="../assets/imagenes/ordenadorpng.png" alt="MSI Modern 15">
             <div class="detalles">
               <h3>MSI Modern 15</h3>
               <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
@@ -142,7 +143,7 @@
         </a>
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <img src="../assets/imagenes/ordenadorpng.png" alt="MSI Modern 15">
             <div class="detalles">
               <h3>MSI Modern 15</h3>
               <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
@@ -152,7 +153,7 @@
         </a>
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <img src="../assets/imagenes/ordenadorpng.png" alt="MSI Modern 15">
             <div class="detalles">
               <h3>MSI Modern 15</h3>
               <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
@@ -162,7 +163,7 @@
         </a>
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <img src="../assets/imagenes/ordenadorpng.png" alt="MSI Modern 15">
             <div class="detalles">
               <h3>MSI Modern 15</h3>
               <p>Intel Core i5, 8GB RAM, SSD 512GB</p>
@@ -172,7 +173,7 @@
         </a>
         <a href="./producto1.html">
           <div class="producto">
-            <img src="../imagenes/ordenadorpng.png" alt="MSI Modern 15">
+            <img src="../assets/imagenes/ordenadorpng.png" alt="MSI Modern 15">
             <div class="detalles">
               <h3>MSI Modern 15</h3>
               <p>Intel Core i5, 8GB RAM, SSD 512GB</p>

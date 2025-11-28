@@ -4,50 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NexoPC - Carrito de la compra</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link  rel="icon" type="image/x-icon" href="./imagenes/logoweb.ico">
 
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- TU CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="./assets/imagenes/logoweb.ico">
 </head>
 <body>
-  <!-- ======== ENCABEZADO ======== -->
-  <header class="encabezado">
-    <nav class="navegacion">
-      <div class="menu-izquierdo">
-        <div class="logo">
-          <a href="../index.html">
-            <img src="../imagenes/logo.png" alt="Inicio">
-          </a>
-        </div>
-        <ul class="lista-menu">
-          <li><a href="../catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
-          <li><a href="../catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
-          <li><a href="../catalogo_portatiles/indexcatalogo.html">Tablets</a></li>
-          <li><a href="../catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
-        </ul>
+
+<!-- ======== ENCABEZADO ======== -->
+<header class="encabezado">
+  <nav class="navegacion container d-flex justify-content-between align-items-center">
+    <div class="menu-izquierdo d-flex align-items-center">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="./assets/imagenes/logo.png" alt="Inicio" class="img-fluid">
+        </a>
       </div>
+      <ul class="lista-menu nav">
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Portátiles</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Sobremesa</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Tablets</a></li>
+        <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
+      </ul>
+    </div>
 
-      <div class="menu-derecho">
-        <input type="text" placeholder="Buscar producto" class="buscador">
-        <a href="./login.html"><button class="boton boton-claro">Iniciar sesión</button></a>
-        <a href="./registro.html"><button class="boton boton-oscuro">Crea cuenta</button></a>
-        <div class="carrito">
-          <a href="./carrito.html">
-            <img src="./imagenes/carrito.png" alt="Carrito">
-          </a>
-        </div>
+    <div class="menu-derecho d-flex align-items-center">
+      <input type="text" placeholder="Buscar producto" class="buscador form-control form-control-sm" style="max-width: 220px;">
+      <a href="./login.html"><button class="btn btn-sm boton boton-claro ms-2">Iniciar sesión</button></a>
+      <a href="./registro.html"><button class="btn btn-sm boton boton-oscuro ms-2">Crea cuenta</button></a>
+      <div class="carrito ms-2">
+        <a href="./carrito.html">
+          <img src="./assets/imagenes/carrito.png" alt="Carrito" class="img-fluid">
+        </a>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
 
-  <main class="catalogo">
-    <h1 class="titulo-catalogo">Carrito de la compra</h1>
+<!-- ======== CONTENIDO DEL CARRITO ======== -->
+<main class="catalogo py-5">
+  <div class="container">
+    <h1 class="titulo-catalogo mb-4">Carrito de la compra</h1>
 
     <div class="contenedor-catalogo">
-
+      <!-- PRODUCTOS EN EL CARRITO -->
       <section class="productos">
         <div class="producto">
-          <img src="./imagenes/ordenadorpng.png" alt="MSI MPG Trident 3">
+          <img src="./assets/imagenes/ordenadorpng.png" alt="MSI MPG Trident 3">
           <div class="detalles">
             <h3>MSI MPG Trident 3</h3>
             <p>Intel i7 10700F · RTX 2060 SUPER · 16GB RAM · 512GB SSD + 2TB HDD · Windows 10 Home</p>
@@ -56,13 +64,13 @@
               <span class="precio-antiguo">€3,499.00</span>
               <span>€3,299.00</span>
             </div>
-            <input type="number" value="1" min="1" class="cantidad">
+            <input type="number" value="1" min="1" class="cantidad form-control input-dark">
           </div>
           <button class="boton boton-oscuro">Eliminar</button>
         </div>
 
         <div class="producto">
-          <img src="./imagenes/MSI_PS_desktop.jpg" alt="MSI Creator 15">
+          <img src="./assets/imagenes/MSI_PS_desktop.jpg" alt="MSI Creator 15">
           <div class="detalles">
             <h3>MSI Creator 15</h3>
             <p>Intel i7 11800H · RTX 3060 · 16GB RAM · 1TB SSD · Windows 11 Pro</p>
@@ -71,7 +79,7 @@
               <span class="precio-antiguo">€2,299.00</span>
               <span>€1,999.00</span>
             </div>
-            <input type="number" value="1" min="1" class="cantidad">
+            <input type="number" value="1" min="1" class="cantidad form-control input-dark">
           </div>
           <button class="boton boton-oscuro">Eliminar</button>
         </div>
@@ -83,7 +91,7 @@
         </div>
       </section>
 
-
+      <!-- RESUMEN DEL PEDIDO -->
       <aside class="filtros">
         <h2>Resumen de la compra</h2>
         <p>Subtotal: <strong>€5,298.00</strong></p>
@@ -96,6 +104,7 @@
       </aside>
     </div>
 
+    <!-- BLOQUE BLANCO DE BENEFICIOS -->
     <section class="bloque-blanco" style="margin-top: 3rem; border-radius: 15px;">
       <div class="contenido-bloque">
         <div class="texto-bloque">
@@ -112,45 +121,47 @@
         </div>
       </div>
     </section>
-  </main>
+  </div>
+</main>
 
-  <footer class="pie">
-     <div class="seccion-pie">
-      <div class="suscripcion">
-        <h3>Inicia sesión con nosotros</h3>
-        <p>Sé el primero en conocer las últimas ofertas</p>
-        <form class="formulario-suscripcion">
-          <input type="email" placeholder="Email" required>
-          <button type="submit" class="boton boton-dorado">Suscribirse</button>
-        </form>
+<!-- ======== PIE DE PÁGINA ======== -->
+<footer class="pie">
+  <div class="seccion-pie">
+    <div class="suscripcion">
+      <h3>Inicia sesión con nosotros</h3>
+      <p>Sé el primero en conocer las últimas ofertas</p>
+      <form class="formulario-suscripcion">
+        <input type="email" placeholder="Email" required>
+        <button type="submit" class="boton boton-dorado">Suscribirse</button>
+      </form>
+    </div>
+
+    <div class="informacion">
+      <div>
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Política de privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="https://pagina-web-nu-murex.vercel.app/index.html">nexoPC</a> © 2025 by <a href="https://github.com/SamuelPeAg/Pagina-Web/tree/main">Samuel Peña Aguayo</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></li>
+        </ul>
       </div>
-
-      <div class="informacion">
-        <div>
-          <h4>Información</h4>
-          <ul>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Términos</a></li>
-            <li><a href="https://pagina-web-nu-murex.vercel.app/index.html">nexoPC</a> © 2025 by <a href="https://github.com/SamuelPeAg/Pagina-Web/tree/main">Samuel Peña Aguayo</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Partes del PC</h4>
-          <ul>
-            <li><a href="#">CPU</a></li>
-            <li><a href="#">Placas base</a></li>
-            <li><a href="#">Memoria RAM</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Dirección</h4>
-          <p>Calle Capitulares 12, Córdoba, España</p>
-          <p>Tel: +34 957 123 456</p>
-          <p>Lunes a Viernes: 9:00 - 18:00</p>
-        </div>
+      <div>
+        <h4>Partes del PC</h4>
+        <ul>
+          <li><a href="#">CPU</a></li>
+          <li><a href="#">Placas base</a></li>
+          <li><a href="#">Memoria RAM</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Dirección</h4>
+        <p>Calle Capitulares 12, Córdoba, España</p>
+        <p>Tel: +34 957 123 456</p>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
       </div>
     </div>
-  </footer>
-</body>
-</html>
+  </div>
+</footer>
+
+<!-- Bootstrap J
