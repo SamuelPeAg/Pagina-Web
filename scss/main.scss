@@ -1,5 +1,5 @@
 // main.scss
-
+@use "../node_modules/bootstrap/scss/bootstrap";
 // 1. Estructura básica y diseño
 @use '_encabezado';  // Encabezado de la página
 @use '_pie';         // Pie de página
@@ -11,5 +11,6 @@
 @use '_login';        // Estilos para login y registro
 
 // 3. Estilos adicionales
+
 @use '_slider';      
 
