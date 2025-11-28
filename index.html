@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./scss/main.css">
 
   <link rel="icon" type="image/x-icon" href="./assets/imagenes/logoweb.ico">
+  <audio id="sonido-click" src="./assets/sonidos/click.mp3"></audio>
+
 </head>
 <body>
 
@@ -16,30 +18,28 @@
   <nav class="navegacion container">
     <div class="menu-izquierdo">
       <div class="logo">
-        <a href="./index.html">
+        <a href="./index.html" data-sonido="true">
           <img src="./assets/imagenes/logo.png" alt="Inicio">
         </a>
       </div>
 
-      <!-- Menú usa también clases de Bootstrap, pero mantiene las tuyas -->
       <ul class="lista-menu nav">
         <li class="nav-item">
-          <a class="nav-link px-2" href="./catalogo_portatiles/indexcatalogo.html">Portátiles</a>
+          <a class="nav-link px-2" href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Portátiles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2" href="./catalogo_portatiles/catalogoTablet.html">Sobremesa</a>
+          <a class="nav-link px-2" href="./catalogo_portatiles/catalogoTablet.html" data-sonido="true">Sobremesa</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2" href="./catalogo_portatiles/catalogoTablet.html">Tablets</a>
+          <a class="nav-link px-2" href="./catalogo_portatiles/catalogoTablet.html" data-sonido="true">Tablets</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-2" href="./catalogo_portatiles/indexcatalogo.html">Móvil</a>
+          <a class="nav-link px-2" href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Móvil</a>
         </li>
       </ul>
     </div>
 
     <div class="menu-derecho">
-      <!-- Mantienes tu clase .buscador pero le añades form-control de Bootstrap -->
       <input
         type="text"
         placeholder="Buscar producto"
@@ -47,16 +47,16 @@
         style="max-width: 220px;"
       >
 
-      <a href="./login.html" class="btn btn-sm boton boton-claro">
+      <a href="./login.html" class="btn btn-sm boton boton-claro" data-sonido="true">
         Iniciar sesión
       </a>
 
-      <a href="./registro.html" class="btn btn-sm boton boton-oscuro">
+      <a href="./registro.html" class="btn btn-sm boton boton-oscuro" data-sonido="true">
         Crea cuenta
       </a>
 
       <div class="carrito ms-2">
-        <a href="./carrito.html">
+        <a href="./carrito.html" data-sonido="true">
           <img src="./assets/imagenes/carrito.png" alt="Carrito">
         </a>
       </div>
@@ -69,12 +69,11 @@
   <div class="container">
     <h1 class="titulo-catalogo mb-4 text-center text-warning">Productos Destacados</h1>
 
-    <!-- Carousel para mostrar productos destacados -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" data-sonido="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" data-sonido="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" data-sonido="true"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -87,27 +86,26 @@
           <img src="./assets/imagenes/gaming.jpeg" class="d-block w-100" alt="Producto 3">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" data-sonido="true">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" data-sonido="true">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <!-- Sección de categorías o productos -->
+    <!-- Categorías de productos -->
     <h2 class="mt-5 text-center text-warning">Categorías</h2>
     <div class="row g-4">
-      <!-- Categorías de productos -->
       <div class="col-md-4">
         <div class="card">
           <img src="./assets/imagenes/portatil.jpg" class="card-img-top" alt="Portátiles">
           <div class="card-body">
             <h5 class="card-title">Portátiles</h5>
             <p class="card-text">Explora nuestra gama de portátiles, desde modelos básicos hasta los más potentes para gaming.</p>
-            <a href="../catalogo_portatiles/indexcatalogo.html" class="btn btn-warning w-100">Ver más</a>
+            <a href="./catalogo_portatiles/indexcatalogo.html" class="btn btn-warning w-100" data-sonido="true">Ver más</a>
           </div>
         </div>
       </div>
@@ -118,7 +116,7 @@
           <div class="card-body">
             <h5 class="card-title">Sobremesas</h5>
             <p class="card-text">Potentes equipos de sobremesa ideales para trabajo o juegos de alta demanda.</p>
-            <a href="../catalogo_portatiles/indexcatalogo.html" class="btn btn-warning w-100">Ver más</a>
+            <a href="./catalogo_portatiles/indexcatalogo.html" class="btn btn-warning w-100" data-sonido="true">Ver más</a>
           </div>
         </div>
       </div>
@@ -129,7 +127,7 @@
           <div class="card-body">
             <h5 class="card-title">Tablets</h5>
             <p class="card-text">Descubre las mejores tablets del mercado para estudiar, trabajar o entretenimiento.</p>
-            <a href="../catalogo_portatiles/catalogoTablet.html" class="btn btn-warning w-100">Ver más</a>
+            <a href="./catalogo_portatiles/catalogoTablet.html" class="btn btn-warning w-100" data-sonido="true">Ver más</a>
           </div>
         </div>
       </div>
@@ -178,5 +176,6 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

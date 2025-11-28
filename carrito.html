@@ -97,7 +97,7 @@
         <hr>
         <p><strong>Total: €6,410.58</strong></p>
 
-        <button class="boton boton-azul" style="width: 100%; margin-top: 1rem;">Pagar</button>
+        <button class="boton boton-azul" style="width: 100%; margin-top: 1rem;" data-bs-toggle="modal" data-bs-target="#confirmationModal" id="modal">Pagar</button>
         <button class="boton boton-claro" style="width: 100%; margin-top: 0.5rem;">Check out con PayPal</button>
       </aside>
     </div>
@@ -121,6 +121,24 @@
     </section>
   </div>
 </main>
+
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmationModalLabel">¡Compra realizada!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>¡Gracias por tu compra! El pago se ha procesado con éxito.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeModal" data-bs-dismiss="modal">Cerrar</button>
+        <a href="./catalogo_portatiles/indexcatalogo.html" class="btn btn-primary">Seguir comprando</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ======== PIE DE PÁGINA ======== -->
 <footer class="pie">
@@ -161,5 +179,10 @@
     </div>
   </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
 
 <!-- Bootstrap J
