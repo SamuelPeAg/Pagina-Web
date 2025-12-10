@@ -29,14 +29,29 @@
         <li class="nav-item"><a class="nav-link px-2" href="../catalogo_portatiles/indexcatalogo.html">Móvil</a></li>
       </ul>
     </div>
+      <div class="menu-derecho d-flex align-items-center">
 
-    <div class="menu-derecho d-flex align-items-center">
-      <a href="./login.html"><button class="btn btn-sm boton boton-claro ms-2">Iniciar sesión</button></a>
-      <a href="./registro.html"><button class="btn btn-sm boton boton-oscuro ms-2">Crea cuenta</button></a>
-      <div class="carrito ms-2">
-        <a href="./carrito.html">
-          <img src="./assets/imagenes/carrito.png" alt="Carrito" class="img-fluid">
+        <form role="search" class="me-2">
+          <label for="buscar" class="visually-hidden">Buscar producto</label>
+          <input id="buscar" type="text" placeholder="Buscar producto"
+                class="buscador form-control form-control-sm"
+                style="max-width: 220px;">
+        </form>
+
+        <a href="./login.html" class="btn btn-sm boton boton-claro ms-2">
+          Iniciar sesión
         </a>
+
+        <a href="./registro.html" class="btn btn-sm boton boton-oscuro ms-2">
+          Crea cuenta
+        </a>
+
+        <div class="carrito ms-2">
+          <a href="./carrito.html">
+            <img src="./assets/imagenes/carrito.png" alt="Carrito" class="img-fluid">
+          </a>
+        </div>
+
       </div>
     </div>
   </nav>
@@ -146,8 +161,17 @@
       <h3>Inicia sesión con nosotros</h3>
       <p>Sé el primero en conocer las últimas ofertas</p>
       <form class="formulario-suscripcion">
-        <button type="submit" class="boton boton-dorado">Suscribirse</button>
-      </form>
+      <label for="email-suscripcion" class="visually-hidden">Correo electrónico</label>
+      
+      <input id="email-suscripcion"
+            type="email"
+            placeholder="Email"
+            required>
+
+      <button type="submit" class="boton boton-dorado">
+        Suscribirse
+      </button>
+    </form>
     </div>
 
     <div class="informacion">
