@@ -44,7 +44,10 @@
     <div class="menu-derecho">
       <form role="search" class="me-2">
         <label for="buscar" class="visually-hidden">Buscar producto</label>
-        <input id="buscar" type="text" placeholder="Buscar producto"
+        <input id="buscar"
+               type="text"
+               placeholder="Buscar producto"
+               aria-label="Buscar producto"
                class="buscador form-control form-control-sm"
                style="max-width: 220px;">
       </form>
@@ -58,8 +61,8 @@
       </a>
 
       <div class="carrito ms-2">
-        <a href="./carrito.html" data-sonido="true">
-          <img src="./assets/imagenes/carrito.png" alt="Ir al carrito de compras">
+        <a href="./carrito.html" aria-label="Ir al carrito de compras" data-sonido="true">
+          <img src="./assets/imagenes/carrito.png" alt="Carrito de compras">
         </a>
       </div>
     </div>
@@ -125,7 +128,7 @@
       
       <div class="col-md-4">
         <div class="card">
-          <img src="./assets/imagenes/portatil.jpg" class="card-img-top" alt="Portátil moderno abierto sobre escritorio">
+          <img src="./assets/imagenes/portatil.jpg" class="card-img-top" alt="Portátil moderno sobre escritorio">
           <div class="card-body">
             <h5 class="card-title">Portátiles</h5>
             <p class="card-text">
@@ -138,7 +141,7 @@
 
       <div class="col-md-4">
         <div class="card">
-          <img src="./assets/imagenes/sobremesa.jpg" class="card-img-top" alt="Torre de ordenador de sobremesa con ventilación RGB">
+          <img src="./assets/imagenes/sobremesa.jpg" class="card-img-top" alt="PC de sobremesa con iluminación RGB">
           <div class="card-body">
             <h5 class="card-title">Sobremesas</h5>
             <p class="card-text">
@@ -180,7 +183,11 @@
         <!-- FORMULARIO CORREGIDO -->
         <form class="formulario-suscripcion d-flex gap-2">
           <label for="email-suscripcion" class="visually-hidden">Correo electrónico</label>
-          <input id="email-suscripcion" type="email" placeholder="Email" required>
+          <input id="email-suscripcion"
+                 type="email"
+                 placeholder="Email"
+                 aria-label="Correo electrónico"
+                 required>
           
           <button type="submit" class="boton boton-dorado">
             Suscribirse
