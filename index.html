@@ -42,6 +42,8 @@
     </div>
 
     <div class="menu-derecho">
+
+      <!-- BUSCADOR -->
       <form role="search" class="me-2">
         <label for="buscar" class="visually-hidden">Buscar producto</label>
         <input id="buscar"
@@ -52,6 +54,7 @@
                style="max-width: 220px;">
       </form>
 
+      <!-- BOTONES -->
       <a href="./login.html" class="btn btn-sm boton boton-claro" data-sonido="true">
         Iniciar sesión
       </a>
@@ -180,18 +183,20 @@
         <h3>Inicia sesión con nosotros</h3>
         <p>Sé el primero en conocer las últimas ofertas</p>
 
-        <!-- FORMULARIO CORREGIDO -->
-        <form class="formulario-suscripcion d-flex gap-2">
-          <label for="email-suscripcion" class="visually-hidden">Correo electrónico</label>
+        <!-- FORMULARIO DEFINITIVAMENTE CORREGIDO (WCAG 3.2.2) -->
+        <form class="formulario-suscripcion d-flex flex-column gap-2">
+
+          <label for="email-suscripcion">Correo electrónico:</label>
+
           <input id="email-suscripcion"
                  type="email"
-                 placeholder="Email"
-                 aria-label="Correo electrónico"
+                 placeholder="Introduce tu email"
                  required>
-          
+
           <button type="submit" class="boton boton-dorado">
             Suscribirse
           </button>
+
         </form>
       </div>
 
