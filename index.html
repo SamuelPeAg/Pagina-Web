@@ -200,7 +200,233 @@
         </form>
       </div>
 
-      <!-- Columna 2 -->
+      <!-- Columna 2 --><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexoPC - Tienda de Ordenadores</title>
+
+  <link rel="stylesheet" href="./scss/main.css">
+  <link rel="icon" type="image/x-icon" href="./assets/imagenes/logoweb.ico">
+
+  <audio id="sonido-click" src="./assets/sonidos/click.mp3"></audio>
+</head>
+
+<body>
+
+<!-- ======== ENCABEZADO ======== -->
+<header class="encabezado">
+  <nav class="navegacion container">
+
+    <div class="menu-izquierdo">
+      <div class="logo">
+        <a href="./index.html" data-sonido="true">
+          <img src="./assets/imagenes/logo.png" alt="Logo de NexoPC, volver al inicio">
+        </a>
+      </div>
+
+      <ul class="lista-menu nav">
+        <li class="nav-item">
+          <a class="nav-link px-2" href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Portátiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" href="./catalogo_portatiles/catalogoTablet.html" data-sonido="true">Sobremesa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" href="./catalogo_portatiles/catalogoTablet.html" data-sonido="true">Tablets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" href="./catalogo_portatiles/indexcatalogo.html" data-sonido="true">Móvil</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-derecho">
+
+      <!-- BUSCADOR -->
+      <form role="search" class="me-2">
+        <label for="buscar" class="visually-hidden">Buscar producto</label>
+        <input id="buscar"
+               type="text"
+               placeholder="Buscar producto"
+               aria-label="Buscar producto"
+               class="buscador form-control form-control-sm"
+               style="max-width: 220px;">
+      </form>
+
+      <!-- BOTONES -->
+      <a href="./login.html" class="btn btn-sm boton boton-claro" data-sonido="true">
+        Iniciar sesión
+      </a>
+
+      <a href="./registro.html" class="btn btn-sm boton boton-oscuro" data-sonido="true">
+        Crea cuenta
+      </a>
+
+      <div class="carrito ms-2">
+        <a href="./carrito.html" aria-label="Ir al carrito de compras" data-sonido="true">
+          <img src="./assets/imagenes/carrito.png" alt="Carrito de compras">
+        </a>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+<!-- ======== CONTENIDO PRINCIPAL ======== -->
+<main class="py-5">
+  <div class="container">
+
+    <h1 class="titulo-catalogo mb-4 text-center text-warning">
+      Productos Destacados
+    </h1>
+
+    <!-- CARRUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Imagen 1" data-sonido="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Imagen 2" data-sonido="true"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Imagen 3" data-sonido="true"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/imagenes/setupgaming.webp" class="d-block w-100"
+               alt="Setup gaming con iluminación RGB">
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/imagenes/blanco.webp" class="d-block w-100"
+               alt="Ordenador de escritorio blanco minimalista">
+        </div>
+
+        <div class="carousel-item">
+          <img src="./assets/imagenes/gaming.webp" class="d-block w-100"
+               alt="Equipo gaming profesional con luces LED">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev" data-sonido="true">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next" data-sonido="true">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+
+    </div>
+
+    <!-- CATEGORÍAS -->
+    <h2 class="mt-5 text-center text-warning">Categorías</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/imagenes/portatil.webp" class="card-img-top" alt="Portátil moderno sobre escritorio">
+          <div class="card-body">
+            <h5 class="card-title">Portátiles</h5>
+            <p class="card-text">
+              Explora nuestra gama de portátiles, desde modelos básicos hasta los más potentes para gaming.
+            </p>
+            <a href="./catalogo_portatiles/indexcatalogo.html" class="btn btn-warning w-100" data-sonido="true">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/imagenes/sobremesa.webp" class="card-img-top" alt="PC de sobremesa con iluminación RGB">
+          <div class="card-body">
+            <h5 class="card-title">Sobremesas</h5>
+            <p class="card-text">
+              Potentes equipos de sobremesa ideales para trabajo o juegos de alta demanda.
+            </p>
+            <a href="./catalogo_portatiles/indexcatalogo.html" class="btn btn-warning w-100" data-sonido="true">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/imagenes/tablets.webp" class="card-img-top" alt="Tablet moderna de alta resolución">
+          <div class="card-body">
+            <h5 class="card-title">Tablets</h5>
+            <p class="card-text">
+              Descubre las mejores tablets del mercado para estudiar, trabajar o entretenimiento.
+            </p>
+            <a href="./catalogo_portatiles/catalogoTablet.html" class="btn btn-warning w-100" data-sonido="true">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- ======== PIE DE PÁGINA ======== -->
+<footer class="pie">
+  <div class="seccion-pie container">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4 suscripcion">
+        <h3>Inicia sesión con nosotros</h3>
+        <p>Sé el primero en conocer las últimas ofertas</p>
+
+        <form class="formulario-suscripcion d-flex flex-column gap-2">
+          <label for="email-suscripcion">Correo electrónico:</label>
+          <input id="email-suscripcion" type="email" placeholder="Introduce tu email" required>
+          <button type="submit" class="boton boton-dorado">Suscribirse</button>
+        </form>
+      </div>
+
+      <div class="col-md-4 informacion">
+        <h4>Información</h4>
+        <ul class="list-unstyled">
+          <li><a href="acerca.html">Acerca de</a></li>
+          <li><a href="privacidad.html">Política de privacidad</a></li>
+          <li><a href="terminos.html">Términos</a></li>
+          <li>
+            <a href="https://pagina-web-nu-murex.vercel.app/index.html">nexoPC</a> © 2025 by 
+            <a href="https://github.com/SamuelPeAg/Pagina-Web/tree/main">Samuel Peña Aguayo</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 informacion">
+        <h4>Partes del PC</h4>
+        <ul class="list-unstyled">
+          <li><a href="#">CPU</a></li>
+          <li><a href="#">Placas base</a></li>
+          <li><a href="#">Memoria RAM</a></li>
+        </ul>
+
+        <h4 class="mt-3">Dirección</h4>
+        <p>Calle Capitulares 12, Córdoba, España</p>
+        <p>Tel: +34 957 123 456</p>
+        <p>Lunes a Viernes: 9:00 - 18:00</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
+
       <div class="col-md-4 informacion">
         <h4>Información</h4>
         <ul class="list-unstyled">
